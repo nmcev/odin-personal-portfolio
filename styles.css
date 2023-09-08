@@ -441,4 +441,8 @@ footer {
     .title {
         line-height: 42px;
     }
+
+    .title-1 {
+        font-size: 28.5px;
+    }
 }
