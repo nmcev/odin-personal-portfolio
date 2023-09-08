@@ -401,6 +401,7 @@ footer {
     .copyright {
         margin-left: 0;
         margin-top: 1rem;
+        align-self: center;
     }
 
     .para-2 {
@@ -418,7 +419,8 @@ footer {
         background-image: url('./images/phone.svg');
         width: 100%;
     }
-        .title{
-            line-height: 42px;
-        }
+
+    .title {
+        line-height: 42px;
+    }
 }
