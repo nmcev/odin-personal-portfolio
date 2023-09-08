@@ -13,16 +13,15 @@ document.addEventListener("mousemove", (e) => {
 let isOutsideMain = false;
 
 window.addEventListener('scroll', () => {
-    const mainRect = main.getBoundingClientRect();
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition >= mainRect.bottom && !isOutsideMain) {
+    if (scrollPosition) {
         isOutsideMain = true;
         nav.style.backgroundColor = '#3333339a';
         items.forEach(item => {
             item.style.color = "#F6F4EB"
         })
-    } else if (scrollPosition < mainRect.bottom && isOutsideMain) {
+    } else if (!scrollPosition) {
         isOutsideMain = false;
         nav.style.backgroundColor = 'transparent';
         items.forEach(item => {
