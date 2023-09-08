@@ -415,7 +415,7 @@ footer {
     }
 
     .picture {
-        background-image: url('/images/phone.svg');
+        background-image: url('./images/phone.svg');
         width: 100%;
     }
 }
