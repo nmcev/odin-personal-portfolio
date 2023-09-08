@@ -97,7 +97,7 @@ ul li a {
     margin: auto;
     place-content: center;
     height: 100vh;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: center;
 }
