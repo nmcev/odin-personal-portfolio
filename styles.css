@@ -20,6 +20,7 @@ main {
     margin: 0;
     font-family: "Basis Grotesque", sans-serif;
     font-weight: normal;
+    cursor: url('./images/icons8-select-cursor-24.png'), auto;
 }
 
 html {
