@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
 </head>
 
 <body>
@@ -13,8 +15,8 @@
     <main id="main">
         <nav id="nav" class="nav">
             <ul id="ul">
-                <li><a class="item" href="#">About</a></li>
-                <li><a class="item" href="#">Projects</a></li>
+                <li><a class="item" href="#main">About</a></li>
+                <li><a class="item" href="#projects">Projects</a></li>
                 <li><a class="item" href="#">Contact</a></li>
             </ul>
         </nav>
@@ -23,26 +25,111 @@
             <div class="description">
                 <h1 tabindex="0" class="welcome">Hello there 👋!<br>
                     I'm a <span class="title">Front End Developer.</span></h1>
-                <p tabindex="0">The best way to complain is make things!<br>
+                <p class="para" tabindex="0">The best way to complain is make things!<br>
                     an aspiring web developer on a journey to unlock<br>
                     the world of coding and web development with <a href="https://theodinproject.com"
                         style="text-decoration: none;">The
                         Odin Project.</a>
+                    <br>
+                    <br>
+                    <span tabindex="0" class="findMe">you can find me on <a class="github"
+                            style="text-decoration: none;" href="https://github.com/nmcev"><i
+                                class="devicon-github-original colored"></i></a></span>
                 </p>
             </div>
 
-            <div class="picture"></div>
+            <div class="picture">
+                <!-- <img src="./images/undraw_hacker_mind_-6-y85 (1).svg" alt=""> -->
+            </div>
+
 
             <div class="bottom">
-                <button class="button-down">
-                    <img id="scrollToTheMiddle" class="arrowDown-icon" src="images/arrowDown.svg" alt="">
-                </button>
+                <a href="#projects"><button class="button-down">
+                        <img id="scrollToTheMiddle" class="arrowDown-icon" src="images/arrowDown.svg" alt="">
+                    </button>
+                </a>
             </div>
         </section>
     </main>
 
-    <section></section>
-    <script src="script.js"></script>
+    <section id="projects" class="projects-section">
+        <header class="projectsHeader">
+            <h3 tabindex="0" class="projectsTitle"><strong>My Projects:</strong></h3>
+        </header>
+        <article tabindex="0" class="cards">
+
+            <article tabindex="0" class="card">
+                <div class="card__image" style="background-image: url('./images/battleship.png');"></div>
+                <div class="card__caption">
+                    <header>
+                        <h1 tabindex="0" class="card__header">Battle Ship</h1>
+                    </header>
+                    <p tabindex="0" class="card__description">
+                        Battle Ship is a classic strategy game where you command a fleet of ships to defeat your
+                        opponent.
+                        Test your tactical skills and sink your enemy's ships before they sink yours!
+                    </p>
+                    <div class="card__links">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://nmcev.github.io/odin-battleship/dist/index.html" class="card__link">
+                            <span style="font-size: 22px;" class="mdi mdi-open-in-new"></span>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/nmcev/odin-battleship"
+                            class="card__link">
+                            <i style="font-size: 22px;" class="devicon-github-original"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+
+            <article tabindex="0" class="card">
+                <div class="card__image" style="background-image: url('./images/etch.jpg');"></div>
+                <div tabindex="0" class="card__caption">
+                    <header>
+                        <h1 tabindex="0" class="card__header">Etch a sketch</h1>
+                    </header>
+                    <p tabindex="0" class="card__description">
+                        A simple web app that allows users to draw on the screen using their mouse or touchscreen, then
+                        erase with another click of either button.</p>
+
+                    </p>
+                    <div class="card__links">
+                        <a target="_blank" href="https://nmcev.github.io/odin-etch-a-sketch/" class="card__link">
+                            <span style="font-size: 22px;" class="mdi mdi-open-in-new"></span>
+                        </a>
+                        <a target="_blank" href="https://github.com/nmcev/odin-etch-a-sketch" class="card__link">
+                            <i style="font-size: 22px;" class="devicon-github-original"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article tabindex="0" class="card">
+                <div class="card__image" style="background-image: url('./images/tic.png');"></div>
+                <div tabindex="0" class="card__caption">
+                    <header>
+                        <h1 tabindex="0" class="card__header">Tic Tac Toe</h1>
+                    </header>
+                    <p tabindex="0" class=" card__description">
+                        Play against your friend play as X or O. You can also choose to be anonymous if you want, it is
+                        built using HTML5 , CSS3 & JavaScript .
+                    </p>
+                    <div class="card__links">
+                        <a target="_blank" rel="noopener noreferrer" href="https://nmcev.github.io/odin-tic-tac-toe/"
+                            class="card__link">
+                            <span style="font-size: 22px;" class="mdi mdi-open-in-new"></span>
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/nmcev/odin-tic-tac-toe" class="card__link">
+                                <i style="font-size: 22px;" class="devicon-github-original"></i>
+                            </a>
+                    </div>
+                </div>
+            </article>
+        </article>
+    </section>
+    
+  <script src="script.js"></script>
 
 </body>
 
