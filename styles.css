@@ -174,8 +174,8 @@ ul li a {
     justify-content: center;
     align-items: center;
     background: url('./images/undraw_programming_re_kg9v.svg') no-repeat center;
-    background-size: cover;
-    width: 70%;
+    background-size: contain;
+    width: 100%;
     height: 100%;
     mix-blend-mode: multiply;
 }
@@ -412,5 +412,10 @@ footer {
 
     .social {
         margin-left: 2px;
+    }
+
+    .picture {
+        background-image: url('/images/phone.svg');
+        width: 100%;
     }
 }
