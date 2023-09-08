@@ -13,9 +13,12 @@
 body,
 main {
     margin: 0;
-    scroll-behavior: smooth;
     font-family: "Basis Grotesque", sans-serif;
     font-weight: medium;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -37,6 +40,7 @@ main {
     transition: all 0.5s ease-in-out;
     opacity: 1;
     font-weight: bold;
+    z-index: 500;
 }
 
 ul {
@@ -114,7 +118,7 @@ ul li a {
 
 }
 
-p {
+.para {
     justify-self: center;
     align-self: center;
     font-size: 23px;
@@ -145,15 +149,120 @@ p {
 
 @keyframes bubbleUp {
 
-    from{
+    from {
         transform: translateY(0%);
     }
+
     to {
         transform: translateY(-10px);
     }
 }
 
-.button-down{
+.button-down {
     background-color: transparent;
     border: none;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/undraw_programming_re_kg9v.svg') no-repeat center;
+    background-size: cover;
+    width: 70%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.findMe {
+    font-size: 19px;
+}
+
+i:hover {
+    transition: all 300ms;
+    opacity: 0.5;
+}
+
+.projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.projectsTitle {
+    font-size: 35px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 41px;
+}
+
+.card {
+    border-radius: 8px;
+    margin: 20px;
+    max-width: 380px;
+    background-color: #fff;
+    transition: background-color 500ms ease;
+    padding: 7px;
+}
+
+.card:hover {
+    background-color: #3333333b;
+}
+
+.card__header {
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card__image {
+    width: 100%;
+    height: 275px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card__image img {
+    width: 100%;
+    height: 280px;
+}
+
+
+.card__caption {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+.card__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: background-color 400ms ease;
+}
+
+.card__link:hover {
+    background-color: #F9FBE7;
+    color: #000;
+    cursor: pointer;
 }
