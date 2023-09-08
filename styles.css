@@ -380,6 +380,13 @@ footer {
 
     nav {
         padding-top: 2%;
+        align-items: center;
+    }
+
+    #ul {
+        padding: 0;
+        margin: auto;
+        gap: 10px;
     }
 
     footer {
