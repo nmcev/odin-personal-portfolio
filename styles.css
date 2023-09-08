@@ -411,8 +411,19 @@ footer {
         max-width: 90%;
     }
 
+    .information {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .social {
-        margin-left: 2px;
+        margin: auto;
+        gap: 20px;
+        padding: 0;
+
     }
 
     .picture {
