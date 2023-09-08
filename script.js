@@ -5,10 +5,19 @@ const items = document.querySelectorAll('.item')
 cursor.classList.add("custom-cursor");
 document.body.appendChild(cursor);
 
-document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 600) {
+        // checking the width of the screen to remove the blur circle around the cursor to not appear in the phone when click on the screen
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+        });
+    } else {
+        cursor.classList.remove('.custom-cursor')
+    }
+})
+
 
 let isOutsideMain = false;
 
